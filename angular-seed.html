@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="CatanBoardGenerator">
+  
+  <head>
+    <title></title>
+   	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+   
+  </head>
+  
+  <body ng-controller="MainController">
+    <h1>Hello {{name}}</h1>
+  </body>
+ 
+
+    <script>
+      var app = angular.module('CatanBoardGenerator', []);
+
+		app.controller('MainController', function($scope) {
+		  $scope.name = 'World';
+		});
+    </script>
+    
+</html>
